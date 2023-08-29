@@ -58,12 +58,12 @@
      margin-top: 150px;
   }
   .textsectemp3abt1part1 {
-    width: 150px;
+    width: 200px;
     text-align: center;
   }
   .imgsecabt1no1tmep3part1 img {
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     border-radius: 25px;
   }
   .testimonialtemp3  {
@@ -430,6 +430,12 @@
 .books ul {
   display: inline-flex;
   list-style: none;
+}
+
+.books ul {
+  overflow-x: auto;
+  display: flex;
+  white-space: nowrap;
 }
 
 .book1 {
