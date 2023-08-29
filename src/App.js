@@ -80,7 +80,7 @@ const App = () => {
               <div className='book1img'>
                 <img src={book1}/>
                 <div className='textpartbook'>
-                <h3>Trading price action patterns</h3>
+                <h3>Trading price action<br/> patterns</h3>
                 <h4>₹999</h4>
                 <h3>₹199</h3>
                 </div>
@@ -91,7 +91,7 @@ const App = () => {
               <div className='book1img'>
                 <img src={book2}/>
                 <div className='textpartbook'>
-                <h3>Trading chart pattern (candlestick)</h3>
+                <h3>Trading chart<br/> pattern (candlestick)</h3>
                 <h4>₹999</h4>
                 <h3>₹199</h3>
                 </div>
