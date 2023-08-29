@@ -80,7 +80,8 @@ const App = () => {
               <div className='book1img'>
                 <img src={book1}/>
                 <h3>Trading price action patterns</h3>
-                <h3>₹25</h3>
+                <h4>₹999</h4>
+                <h3>₹199</h3>
               </div>
             </div>
           </li>
@@ -88,7 +89,8 @@ const App = () => {
               <div className='book1img'>
                 <img src={book2}/>
                 <h3>Trading chart pattern (candlestick)</h3>
-                <h3>₹25</h3>
+                <h4>₹999</h4>
+                <h3>₹199</h3>
               </div>
             </div>
             <li>
