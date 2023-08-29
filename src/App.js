@@ -79,18 +79,22 @@ const App = () => {
             <div className='book1' >
               <div className='book1img'>
                 <img src={book1}/>
+                <div className='textpartbook'>
                 <h3>Trading price action patterns</h3>
                 <h4>₹999</h4>
                 <h3>₹199</h3>
+                </div>
               </div>
             </div>
           </li>
           <div className='book1' onClick={scrollTocontactus}>
               <div className='book1img'>
                 <img src={book2}/>
+                <div className='textpartbook'>
                 <h3>Trading chart pattern (candlestick)</h3>
                 <h4>₹999</h4>
                 <h3>₹199</h3>
+                </div>
               </div>
             </div>
             <li>
