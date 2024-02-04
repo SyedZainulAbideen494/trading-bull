@@ -269,10 +269,10 @@ header {
 
 .text-area-section-2-project button {
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 10px 50px;
   border: 2px solid #9E73DA;
   background-color: transparent;
-  border-radius: 5px;
+  border-radius: 25px;
   margin-top: 10px;
 }
 
