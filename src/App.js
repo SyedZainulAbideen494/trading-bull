@@ -78,7 +78,9 @@ const App = () => {
         <p>An all-in-one solution to set up your online store and sell online with ease!.</p>
         <p>Dropment offers various tools such as a shop builder, stats about your online shop, and sales data, customer data, etc.</p>
         <p>Dropment also offers various features like linking with your friends, collaborating with others to start a new business venture, chatting with customers and friends, etc!</p>
+        <a href='https://www.dropment.online/'>
         <button>Visit</button>
+        </a>
       </div>
       <div className='img-section-2-project'>
         <img src={dropment} alt='Dropment Project' />
@@ -89,7 +91,9 @@ const App = () => {
         <h2>Saz PG</h2>
         <p>Saz PG provides sharing rooms only for men at an affordable pricing, with basic amenities such as dinner, washing machine, wifi, etc.</p>
         <p>Saz PG offers 2 sharing, 3 sharing, 4 sharing rooms for men, monthly basis and daily basis.</p>
+        <a href='https://saz-pg.vercel.app/'>
         <button>Visit</button>
+        </a>
       </div>
       <div className='img-section-2-project'>
         <img src={saz_pg} alt='Saz PG Project' />
