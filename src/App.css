@@ -503,6 +503,7 @@ header {
 
 .section-5-service li {
   list-style-type: disc;
+  margin-top: 10px;
 }
 
 .section-5-service button {
