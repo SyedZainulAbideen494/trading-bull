@@ -316,7 +316,7 @@ header {
 
 .img-section-3 {
   width: 40%; /* Adjust the width as needed */
-  height: 100vh; /* Adjust the height as needed */
+  height: 90vh; /* Adjust the height as needed */
   background-color: #e0e0e0; /* Example background color */
   border-radius: 10px; /* Add border radius for rounded corners */
   background-image: url('./images/Inflection\ Points_\ 3\ Business\ Growth\ Triggers\ _\ Entrepreneur.jpg'); /* Replace 'your-image-path.jpg' with the actual path or URL of your image */
@@ -324,6 +324,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden; /* Hide overflowing content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
 }
 
 .text-section-3 {
@@ -396,8 +397,7 @@ header {
 
 .section-4-text button {
   padding: 13px 50px;
-  color: white;
-  background-color: #A172DA;
+  background-color: transparent;
   border-radius: 25px;
   cursor: pointer;
   font-size: 16px;

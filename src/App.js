@@ -105,7 +105,7 @@ const App = () => {
         landscape. Ready to build something extraordinary?
          Choose us as your partner in propelling your business
           to new heights.</p>
-          <button>Contact Us</button>
+          <button onClick={openWhatsAppChat}>Contact Us</button>
   </section>
 </div>
     <div className='section-2'>
