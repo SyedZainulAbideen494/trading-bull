@@ -268,11 +268,16 @@ header {
 .text-area-section-2-project button {
   cursor: pointer;
   padding: 10px 20px;
-  border: 2px solid #312A5D;
-  background-color: #312A5D;
-  color: white;
+  border: 2px solid #9E73DA;
+  background-color: transparent;
   border-radius: 5px;
   margin-top: 10px;
+}
+
+.text-area-section-2-project button:hover {
+  transition: 0.3s;
+  background-color: #9E73DA;
+  color: white;
 }
 
 .img-section-2-project img {
@@ -290,5 +295,67 @@ header {
   .text-area-section-2-project,
   .img-section-2-project {
     width: 100%;
+  }
+}
+
+/* Your CSS file (e.g., Section3.css) */
+.section-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.img-section-3 {
+  width: 40%; /* Adjust the width as needed */
+  height: 80vh; /* Adjust the height as needed */
+  background-color: #e0e0e0; /* Example background color */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  background-image: url('./images/Inflection\ Points_\ 3\ Business\ Growth\ Triggers\ _\ Entrepreneur.jpg'); /* Replace 'your-image-path.jpg' with the actual path or URL of your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.text-section-3 {
+  width: 48%; /* Adjust the width as needed */
+  text-align: center;
+}
+
+.text-section-3 h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.text-section-3 p {
+  font-size: 16px;
+  color: #555;
+}
+
+.text-section-3 button {
+  padding: 13px 50px;
+  color: white;
+  background-color: #9E73DA;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #9E73DA;
+  margin-top: 50px;
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+  .section-3 {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: center; /* Center items in the column */
+  }
+
+  .img-section-3,
+  .text-section-3 {
+    width: 100%; /* Full width on small screens */
+  }
+  .text-section-3 {
+    margin-top: 40px;
   }
 }

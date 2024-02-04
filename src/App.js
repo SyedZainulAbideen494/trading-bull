@@ -42,7 +42,7 @@ const App = () => {
     <div className='section-1'>
         <section className='section-1-textarea'>
             <h2>Our Work<br/> Offers</h2>
-            <button>Services</button>
+            <button>Contact us</button>
         </section>
         <section className='section-1-offers'>
             <div className='offer-section-1'>
@@ -100,6 +100,23 @@ const App = () => {
       </div>
     </section>
   </div>
+</div>
+<div className='section-3'>
+    <div className='img-section-3'></div>
+    <div className='text-section-3'>
+        <h2>Build Website And Grow Online Presence For Yur Business</h2>
+        <p>
+            Transform your business with our expert website
+             development solutions. We create tailored,
+              high-performing websites that not only represent
+               your brand but also drive growth. Our focus 
+               is on delivering a seamless user experience,
+                innovative design, and scalable functionality 
+                to propel your online success. Ready to elevate 
+                your digital presence? Let's build something extraordinary.
+        </p>
+        <button>Contact Us</button>
+    </div>
 </div>
     </div>
    </Fragment>
