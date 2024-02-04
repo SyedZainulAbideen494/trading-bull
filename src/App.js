@@ -39,7 +39,7 @@ const App = () => {
     </div>
     <div className='section-1'>
         <section className='section-1-textarea'>
-            <h2>Our Work Offers</h2>
+            <h2>Our Work<br/> Offers</h2>
             <button>Services</button>
         </section>
         <section className='section-1-offers'>

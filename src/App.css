@@ -143,15 +143,9 @@ header {
 .section-1-textarea h2 {
   font-size: 39px;
   margin-top: 50px;
-  width: 300px;
   color: white;
   margin-bottom: 10px;
-  text-align: center; /* Center the text content in the text area */
-}
-
-.section-1-textarea {
-  margin-top: 20px;
-  text-align: center; /* Center the button */
+  text-align: center; /* Center the text content */
 }
 
 .section-1-textarea button {
@@ -160,9 +154,8 @@ header {
   border: 2px solid #9E73DA;
   color: white;
   background-color: transparent;
-  margin-bottom: 30px;
-  border-radius: 25px;
   margin-top: 20px;
+  border-radius: 25px;
 }
 
 .section-1-offers {
@@ -177,7 +170,7 @@ header {
   margin-bottom: 20px; /* Adjust margin as needed */
   background-color: #2B2354; /* Set the background color for the offer boxes */
   padding: 20px; /* Add padding to the offer boxes */
- color: white;
+  color: white;
   text-align: center; /* Center the content within the offer boxes */
 }
 
@@ -186,7 +179,6 @@ header {
   background-color: #9E73DA; /* Set the background color for the offer boxes */
   transition: 0.3s;
 }
-
 
 .offer-section-1 img {
   width: 40px; /* Make the image inside each offer box take up the full width */
@@ -208,8 +200,13 @@ header {
     flex-direction: column; /* Change to a column layout on smaller screens */
   }
 
+  .section-1-textarea button {
+    margin-bottom: 30px;
+  }
+
   .section-1-textarea {
     align-items: center; /* Center the text area in the middle on smaller screens */
+    margin: auto; /* Center the text area horizontally */
   }
 
   .section-1-offers {
