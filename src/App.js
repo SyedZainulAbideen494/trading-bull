@@ -10,6 +10,12 @@ import saz_pg from './images/S.png'
 import dropment from './images/Dropment (2).png'
 
 const App = () => {
+  const phoneNumber = '917760372901'; // Your WhatsApp number with country code
+
+  const openWhatsAppChat = () => {
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${encodeURIComponent(phoneNumber)}`;
+    window.open(whatsappUrl, '_blank');
+  };
    return(
    <Fragment>
      <div className='main-div'>
@@ -22,7 +28,7 @@ const App = () => {
             <button>About us</button>
             <button>Our work</button>
             <button>Services</button>
-            <button className="contact-button" style={{border: '1px solid #9E73DA', borderRadius: '25px', padding: '10px 20px'}}>Contact us</button>
+            <button onClick={openWhatsAppChat} className="contact-button" style={{border: '1px solid #9E73DA', borderRadius: '25px', padding: '10px 20px'}}>Contact us</button>
           </div>
         </header>
       </div>
@@ -42,7 +48,7 @@ const App = () => {
     <div className='section-1'>
         <section className='section-1-textarea'>
             <h2>Our Work<br/> Offers</h2>
-            <button>Contact us</button>
+            <button onClick={openWhatsAppChat}>Contact us</button>
         </section>
         <section className='section-1-offers'>
             <div className='offer-section-1'>
@@ -81,7 +87,7 @@ const App = () => {
                 to propel your online success. Ready to elevate 
                 your digital presence? Let's build something extraordinary.
         </p>
-        <button>Contact Us</button>
+        <button onClick={openWhatsAppChat}>Contact Us</button>
     </div>
 </div>
     <div className='section-2'>
