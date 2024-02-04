@@ -74,7 +74,6 @@ const App = () => {
         </section>
     </div>
     <div className='section-3'>
-    <div className='img-section-3'></div>
     <div className='text-section-3'>
         <h2>Build Website And Grow Online Presence For Yur Business</h2>
         <p>
@@ -89,8 +88,10 @@ const App = () => {
         </p>
         <button onClick={openWhatsAppChat}>Contact Us</button>
     </div>
+    <div className='img-section-3'></div>
 </div>
 <div className='section-4'>
+<section className='section-4-img'></section>
   <section className='section-4-text'>
     <h2>Why choose us</h2>
     <p>Elevate your digital presence with our expert 
@@ -106,7 +107,6 @@ const App = () => {
           to new heights.</p>
           <button>Contact Us</button>
   </section>
-  <section className='section-4-img'></section>
 </div>
     <div className='section-2'>
   <div className='heading-section-2'>

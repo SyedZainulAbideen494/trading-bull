@@ -125,7 +125,7 @@ header {
 /* Your CSS file (e.g., Section1.css) */
 .section-1 {
   display: flex;
-  margin-top: 50px;
+  margin-top: 100px;
   justify-content: space-between;
   align-items: flex-start;
   background-color: #312A5D;
@@ -222,7 +222,7 @@ header {
 .section-2 {
   background-color: #f0f0f0;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .heading-section-2 {
@@ -311,12 +311,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .img-section-3 {
   width: 40%; /* Adjust the width as needed */
-  height: 50vh; /* Adjust the height as needed */
+  height: 100vh; /* Adjust the height as needed */
   background-color: #e0e0e0; /* Example background color */
   border-radius: 10px; /* Add border radius for rounded corners */
   background-image: url('./images/Inflection\ Points_\ 3\ Business\ Growth\ Triggers\ _\ Entrepreneur.jpg'); /* Replace 'your-image-path.jpg' with the actual path or URL of your image */
@@ -348,7 +348,8 @@ header {
   cursor: pointer;
   font-size: 16px;
   border: 2px solid #6a00f4;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 /* Media query for screens with a maximum width of 768px (adjust as needed) */
@@ -362,18 +363,20 @@ header {
   .text-section-3 {
     width: 100%; /* Full width on small screens */
   }
+  .img-section-3 {
+    height: 40vh;
+  }
   .text-section-3 {
     margin-top: 40px;
   }
 }
 
-/* Your CSS file (e.g., Section4.css) */
 .section-4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
   padding: 20px;
+  margin-top: 150px;
 }
 
 .section-4-text {
@@ -423,11 +426,27 @@ header {
 
 .section-4-img {
   width: 48%;
-  height: 300px; /* Set height as needed */
+  height: 100vh; /* Set height as needed */
   background-color: #e0e0e0; /* Example background color */
   background-image: url('./images/Şirket\ Kültürü\ Nedir_\ Şirket\ Kültürü\ Nasıl\ Oluşturulur_.jpg'); /* Replace with the actual path or URL of your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+  .section-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-4-img {
+    height: 40vh;
+  }
+  .section-4-text,
+  .section-4-img {
+    width: 100%;
+    margin-bottom: 20px; /* Add margin between sections on small screens */
+  }
 }
