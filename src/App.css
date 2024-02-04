@@ -451,6 +451,8 @@ header {
   }
 }
 
+/* Your CSS file (e.g., Section5.css) */
+
 .section-5 {
   padding: 40px;
   text-align: center;
@@ -459,7 +461,7 @@ header {
 .section-5 h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #333; /* Adjust the color as needed */
+  color: #333;
 }
 
 .section-5-services {
@@ -475,12 +477,13 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
   padding: 20px;
+  position: relative;
 }
 
 .section-5-service h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #9E73DA; /* Adjust the color as needed */
+  color: #9E73DA;
 }
 
 .section-5-service p {
@@ -491,5 +494,33 @@ header {
 .section-5-service h4 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #555; /* Adjust the color as needed */
+  color: #555;
+}
+
+.section-5-service ul {
+  padding-left: 20px;
+}
+
+.section-5-service li {
+  list-style-type: disc;
+}
+
+.section-5-service button {
+  background-color: #9E73DA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.section-5-service button span {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.section-5-service button:hover {
+  background-color: #7E549F;
 }

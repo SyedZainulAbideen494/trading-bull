@@ -8,6 +8,28 @@ import design from './images/icons8-design-50.png'
 import upgrade from './images/icons8-update-50.png'
 import saz_pg from './images/S.png'
 import dropment from './images/Dropment (2).png'
+const Service = ({ title, price, initialFeatures }) => {
+  const [showAllFeatures, setShowAllFeatures] = useState(false);
+  const featuresToDisplay = showAllFeatures ? initialFeatures : initialFeatures.slice(0, 3);
+
+  return (
+    <div className='section-5-service'>
+      <h3>{title}</h3>
+      <p>Starting only at<br/>Rs {price}</p>
+      <h4>Features</h4>
+      <ul>
+        {featuresToDisplay.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+      {initialFeatures.length > 3 && (
+        <button onClick={() => setShowAllFeatures(!showAllFeatures)}>
+          {showAllFeatures ? 'Less' : 'More'} <span>&#9660;</span>
+        </button>
+      )}
+    </div>
+  );
+};
 
 const App = () => {
   const phoneNumber = '917760372901'; // Your WhatsApp number with country code
@@ -26,6 +48,28 @@ const App = () => {
   const scrollToSectionabtus = () => {
     sectionabtusRef.current.scrollIntoView({ behavior: 'smooth' });
   };
+  const services = [
+    {
+      title: 'Business Website',
+      price: '3499',
+      features: ['5 pages', 'Domain included', 'SEO Friendly', '3 months free maintenance', 'Call button', 'Email form', 'Free SSL', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
+    },
+    {
+      title: 'Service-based Business Website',
+      price: '8999',
+      features: ['8 pages', 'Domain included', 'SEO Friendly', '3 months free maintenance', 'Call button', 'Payment Gateway', 'Admin Panel', 'Email form', 'Free SSL', 'Dynamic Website (Premium Design)', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
+    },
+    {
+      title: 'E-commerce Website',
+      price: '19999',
+      features: ['15 pages', 'Domain included', 'SEO Friendly', '12 months free maintenance', 'Call button', 'Payment Gateway', 'Admin Panel', '3 months free Hosting', 'Email form', 'Free SSL', 'Dynamic Website (Premium Design)', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
+    },
+    {
+      title: 'Other',
+      price: 'Enquire',
+      features: ['Pages according to requirement', 'Domain included', 'SEO Friendly', '12 months free maintenance', 'Call button', 'Payment Gateway', 'Admin Panel', '1 Year Free Hosting (Unlimited Space)', '?? Products Categories', '?? Products Listing from our side', 'Email form', 'Free SSL', 'Dynamic Website (Premium Design)', 'Product Variation Features', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
+    },
+  ];
    return(
    <Fragment>
      <div className='main-div'>
@@ -155,84 +199,11 @@ const App = () => {
 <div className='section-5'>
       <h2>Our Services</h2>
       <div className='section-5-services'>
-        <div className='section-5-service'>
-          <h3>Business Website</h3>
-          <p>Starting only at<br/>Rs 3499</p>
-          <h4>Features</h4>
-          <p>5 pages</p>
-          <p>Domain included</p>
-          <p>Seo Friendly</p>
-          <p>3 months free maintenance</p>
-          <p>Call button</p>
-          <p>Email form</p>
-          <p>Free SSL</p>
-          <p>100% Responsive Website</p>
-          <p>WhatsApp Button Integration</p>
-          <p>Annual Hsoting rs 7299</p>
-        </div>
-    <div className='section-5-service'>
-      <h3>Service based business Website</h3>
-      <p>Starting at only<br/>Rs 8999</p>
-      <h4>Features</h4>
-          <p>8 pages</p>
-          <p>Domain included</p>
-          <p>Seo Friendly</p>
-          <p>3 months free maintenance</p>
-          <p>Call button</p>
-          <p>Payment Gateway</p>
-          <p>Admin Panel</p>
-          <p>Email form</p>
-          <p>Free SSL</p>
-          <p>Dynamic Website (Premium Design)</p>
-          <p>100% Responsive Website</p>
-          <p>WhatsApp Button Integration</p>
-          <p>Annual Hsoting rs 7299</p>
+        {services.map((service, index) => (
+          <Service key={index} title={service.title} price={service.price} initialFeatures={service.features} />
+        ))}
+      </div>
     </div>
-    <div className='section-5-service'>
-      <h3>E-commerce Website</h3>
-      <p>Starting at only<br/>Rs 19999</p>
-      <h4>Features</h4>
-          <p>15 pages</p>
-          <p>Domain included</p>
-          <p>Seo Friendly</p>
-          <p>12 months free maintenance</p>
-          <p>Call button</p>
-          <p>Payment Gateway</p>
-          <p>Admin Panel</p>
-          <p>3 months free Hosting</p>
-          <p>4 Products Categories</p>
-          <p>8 product varient</p>
-          <p>Email form</p>
-          <p>Free SSL</p>
-          <p>Dynamic Website (Premium Design)</p>
-          <p>100% Responsive Website</p>
-          <p>WhatsApp Button Integration</p>
-          <p>Annual Hsoting rs 7299</p>
-    </div>
-    <div className='section-5-service'>
-      <h3>Custom</h3>
-      <p>Rs ??</p>
-      <h4>Features</h4>
-          <p>pages according to requirement</p>
-          <p>Domain included</p>
-          <p>Seo Friendly</p>
-          <p>12 months free maintenance</p>
-          <p>Call button</p>
-          <p>Payment Gateway</p>
-          <p>Admin Panel</p>
-          <p>1 Year Free Hosting</p>
-          <p>?? Products Categories</p>
-          <p>?? product varient</p>
-          <p>Email form</p>
-          <p>Free SSL</p>
-          <p>Dynamic Website (Premium Design)</p>
-          <p>Product Variation Features</p>
-          <p>100% Responsive Website</p>
-          <p>WhatsApp Button Integration</p>
-          <p>Annual Hsoting rs 7299</p>
-    </div>
-  </div>
-  </div>
     </div>
    </Fragment>
    )
