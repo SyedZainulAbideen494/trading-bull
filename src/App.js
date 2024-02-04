@@ -24,7 +24,7 @@ const App = () => {
       <div className='hero-section'>
       <section className='hero-section-text'>
         <h1>
-          Crafting Websites<br/>
+          Crafting <span style={{color: '#9E73DA'}}>Websites</span><br/>
           & Digital Excellence
         </h1>
         <div className="button-container-hero-section">
