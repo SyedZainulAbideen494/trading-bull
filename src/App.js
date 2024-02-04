@@ -1,16 +1,28 @@
 import React, { useRef, Fragment, useState, useCallback } from 'react';
-import emailjs from '@emailjs/browser';
 import './App.css'
-import banner from './images/Untitled design (29).png'
-import star from './images/Untitled design (17).png'
-import abt1 from './images/Untitled design (30).png'
-import abt2 from './images/Untitled design (28).png'
-import abt3 from './images/Untitled design (31).png'
-import book1 from './images/book1.jpg'
-import book2 from './images/book2.jpg'
+import logo from './images/saz-infotech-w-removebg-preview.png'
+
 
 const App = () => {
-
+   return(
+   <Fragment>
+         <div className='main-div'>
+        <div className='header'>
+            <header>
+                <div className='logo-header'>
+                    <img src={logo}/>
+                </div>
+                <div className='header-btns'>
+                    <button>About us</button>
+                    <button>Our work</button>
+                    <button>services</button>
+                    <button>Contact us</button>
+                </div>
+            </header>
+        </div>
+    </div>
+   </Fragment>
+   )
 };
 
 export default App
