@@ -65,8 +65,8 @@ const App = () => {
       features: ['15 pages', 'Domain included', 'SEO Friendly', '12 months free maintenance', 'Call button', 'Payment Gateway', 'Admin Panel', '3 months free Hosting', 'Email form', 'Free SSL', 'Dynamic Website (Premium Design)', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
     },
     {
-      title: 'Other',
-      price: 'Enquire',
+      title: 'Custom',
+      price: '??',
       features: ['Pages according to requirement', 'Domain included', 'SEO Friendly', '12 months free maintenance', 'Call button', 'Payment Gateway', 'Admin Panel', '1 Year Free Hosting (Unlimited Space)', '?? Products Categories', '?? Products Listing from our side', 'Email form', 'Free SSL', 'Dynamic Website (Premium Design)', 'Product Variation Features', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
     },
   ];
@@ -162,6 +162,14 @@ const App = () => {
           <button onClick={openWhatsAppChat}>Contact Us</button>
   </section>
 </div>
+<div className='section-5'>
+      <h2>Our Services</h2>
+      <div className='section-5-services'>
+        {services.map((service, index) => (
+          <Service key={index} title={service.title} price={service.price} initialFeatures={service.features} />
+        ))}
+      </div>
+    </div>
     <div className='section-2' ref={section2Ref}>
   <div className='heading-section-2'>
     <h2>Our Projects</h2>
@@ -196,14 +204,6 @@ const App = () => {
     </section>
   </div>
 </div>
-<div className='section-5'>
-      <h2>Our Services</h2>
-      <div className='section-5-services'>
-        {services.map((service, index) => (
-          <Service key={index} title={service.title} price={service.price} initialFeatures={service.features} />
-        ))}
-      </div>
-    </div>
     </div>
    </Fragment>
    )
