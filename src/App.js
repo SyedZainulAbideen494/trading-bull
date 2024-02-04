@@ -6,6 +6,8 @@ import code from './images/icons8-code-50.png'
 import maintaion from './images/icons8-development-50.png'
 import design from './images/icons8-design-50.png'
 import upgrade from './images/icons8-update-50.png'
+import saz_pg from './images/S.png'
+import dropment from './images/Dropment (2).png'
 
 const App = () => {
    return(
@@ -65,6 +67,36 @@ const App = () => {
             </div>
         </section>
     </div>
+    <div className='section-2'>
+  <div className='heading-section-2'>
+    <h2>Our Projects</h2>
+  </div>
+  <div className='projects-section-2'>
+    <section className='project-section-2'>
+      <div className='text-area-section-2-project'>
+        <h2>Dropment</h2>
+        <p>An all-in-one solution to set up your online store and sell online with ease!.</p>
+        <p>Dropment offers various tools such as a shop builder, stats about your online shop, and sales data, customer data, etc.</p>
+        <p>Dropment also offers various features like linking with your friends, collaborating with others to start a new business venture, chatting with customers and friends, etc!</p>
+        <button>Visit</button>
+      </div>
+      <div className='img-section-2-project'>
+        <img src={dropment} alt='Dropment Project' />
+      </div>
+    </section>
+    <section className='project-section-2'>
+      <div className='text-area-section-2-project'> 
+        <h2>Saz PG</h2>
+        <p>Saz PG provides sharing rooms only for men at an affordable pricing, with basic amenities such as dinner, washing machine, wifi, etc.</p>
+        <p>Saz PG offers 2 sharing, 3 sharing, 4 sharing rooms for men, monthly basis and daily basis.</p>
+        <button>Visit</button>
+      </div>
+      <div className='img-section-2-project'>
+        <img src={saz_pg} alt='Saz PG Project' />
+      </div>
+    </section>
+  </div>
+</div>
     </div>
    </Fragment>
    )
