@@ -222,6 +222,7 @@ header {
 .section-2 {
   background-color: #f0f0f0;
   padding: 20px;
+  margin-top: 100px;
 }
 
 .heading-section-2 {
@@ -304,6 +305,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  margin-top: 100px;
 }
 
 .img-section-3 {
@@ -334,13 +336,12 @@ header {
 }
 
 .text-section-3 button {
-  padding: 13px 50px;
-  color: white;
-  background-color: #A172DA;
+  padding: 12px 50px;
+  background-color: transparent;
   border-radius: 25px;
   cursor: pointer;
   font-size: 16px;
-  border: 2px solid #A172DA;
+  border: 2px solid #6a00f4;
   margin-top: 50px;
 }
 
