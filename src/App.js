@@ -21,6 +21,11 @@ const App = () => {
   const scrollToSection2 = () => {
     section2Ref.current.scrollIntoView({ behavior: 'smooth' });
   };
+  const sectionabtusRef = useRef(null);
+
+  const scrollToSectionabtus = () => {
+    sectionabtusRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
    return(
    <Fragment>
      <div className='main-div'>
@@ -30,7 +35,7 @@ const App = () => {
             <img src={logo} alt="Logo" />
           </div>
           <div className='header-btns'>
-            <button>About us</button>
+            <button onClick={scrollToSectionabtus}>About us</button>
             <button onClick={scrollToSection2}>Our work</button>
             <button>Services</button>
             <button onClick={openWhatsAppChat} className="contact-button" style={{border: '1px solid #9E73DA', borderRadius: '25px', padding: '10px 20px'}}>Contact us</button>
@@ -78,7 +83,7 @@ const App = () => {
             </div>
         </section>
     </div>
-    <div className='section-3'>
+    <div className='section-3' ref={sectionabtusRef}>
     <div className='text-section-3'>
         <h2>Build Website And Grow Online Presence For Yur Business</h2>
         <p>
