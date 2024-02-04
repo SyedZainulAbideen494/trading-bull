@@ -240,6 +240,7 @@ header {
   width: 48%;
   background-color: #ffffff;
   margin-bottom: 20px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
 }
@@ -284,6 +285,11 @@ header {
 .img-section-2-project img {
   width: 100px;
   border-radius: 5px;
+}
+
+.heading-section-2 h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 
 /* Media query for screens with a maximum width of 768px (adjust as needed) */
