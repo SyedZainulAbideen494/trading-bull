@@ -41,3 +41,62 @@ header {
     display: none;
   }
 }
+
+/* Your CSS file (e.g., HeroSection.css) */
+.hero-section {
+  display: flex;
+  height: 500px; /* Adjust the height as needed */
+}
+
+.hero-section-text,
+.hero-section-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section-text {
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-section-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: black; /* Set the text color */
+}
+
+.hero-section-img {
+  height: 100%; /* Make the image section take full height */
+  background-image: url('./images/Untitled\ design.png'); /* Add your image path */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Change to a column layout on smaller screens */
+    height: auto; /* Adjust height to auto for better responsiveness */
+  }
+
+  .hero-section-text,
+  .hero-section-img {
+    flex: none; /* Reset flex value for both sections */
+    width: 100%; /* Set width to 100% for both sections on smaller screens */
+  }
+
+  .hero-section-img {
+    order: -1; /* Move the image section to the top in the column layout */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-image: url('./images/Untitled\ design.png'); /* Add your image path */
+    background-repeat: no-repeat;
+  }
+
+  .hero-section-text h1 {
+    font-size: 30px; /* Adjust font size for better readability on smaller screens */
+  }
+}

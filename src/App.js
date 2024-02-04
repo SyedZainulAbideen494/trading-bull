@@ -1,6 +1,7 @@
 import React, { useRef, Fragment, useState, useCallback } from 'react';
 import './App.css'
 import logo from './images/saz-infotech-w-removebg-preview.png'
+import banner from './images/Untitled design.png'
 
 
 const App = () => {
@@ -19,6 +20,14 @@ const App = () => {
             <button className="contact-button" style={{border: '1px solid black', borderRadius: '25px', padding: '10px 20px'}}>Contact us</button>
           </div>
         </header>
+      </div>
+      <div className='hero-section'>
+        <section className='hero-section-text'>
+            <h1>Crafting Websites<br/>
+            & Digital Excellence
+            </h1>
+        </section>
+        <section className='hero-section-img'></section>
       </div>
     </div>
    </Fragment>
