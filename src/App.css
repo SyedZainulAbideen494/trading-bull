@@ -299,8 +299,6 @@ header {
 }
 
 /* Your CSS file (e.g., Section3.css) */
-
-/* Shared styles for both large and small screens */
 .section-3 {
   display: flex;
   justify-content: space-between;
@@ -309,25 +307,25 @@ header {
 }
 
 .img-section-3 {
-  width: 40%;
-  height: 80vh;
-  background-color: #e0e0e0;
-  border-radius: 10px;
-  background-image: url('./images/Inflection\ Points_\ 3\ Business\ Growth\ Triggers\ _\ Entrepreneur.jpg');
+  width: 40%; /* Adjust the width as needed */
+  height: 80vh; /* Adjust the height as needed */
+  background-color: #e0e0e0; /* Example background color */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  background-image: url('./images/Inflection\ Points_\ 3\ Business\ Growth\ Triggers\ _\ Entrepreneur.jpg'); /* Replace 'your-image-path.jpg' with the actual path or URL of your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
+  overflow: hidden; /* Hide overflowing content */
 }
 
 .text-section-3 {
-  width: 48%;
+  width: 48%; /* Adjust the width as needed */
   text-align: center;
 }
 
 .text-section-3 h2 {
   font-size: 32px;
-  margin-bottom: 20px; /* Adjusted margin for better spacing */
+  margin-bottom: 30px;
 }
 
 .text-section-3 p {
@@ -343,35 +341,21 @@ header {
   cursor: pointer;
   font-size: 16px;
   border: 2px solid #A172DA;
-  margin-top: 30px; /* Adjusted margin for better spacing */
-  position: relative;
-  overflow: hidden;
+  margin-top: 50px;
 }
 
-.text-section-3 button::before {
-  content: '\2192'; /* Unicode arrow right character */
-  display: inline-block;
-  margin-right: 10px; /* Adjusted margin for spacing between arrow and text */
-  transform: translateX(0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.text-section-3 button:hover::before {
-  transform: translateX(5px); /* Adjusted translation for better appearance */
-}
 /* Media query for screens with a maximum width of 768px (adjust as needed) */
 @media screen and (max-width: 768px) {
   .section-3 {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: center; /* Center items in the column */
   }
 
   .img-section-3,
   .text-section-3 {
-    width: 100%;
+    width: 100%; /* Full width on small screens */
   }
-  
   .text-section-3 {
-    margin-top: 20px; /* Adjusted margin for better spacing */
+    margin-top: 40px;
   }
 }
