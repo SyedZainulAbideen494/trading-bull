@@ -20,7 +20,7 @@ const App = () => {
             <button>About us</button>
             <button>Our work</button>
             <button>Services</button>
-            <button className="contact-button" style={{border: '1px solid black', borderRadius: '25px', padding: '10px 20px'}}>Contact us</button>
+            <button className="contact-button" style={{border: '1px solid #9E73DA', borderRadius: '25px', padding: '10px 20px'}}>Contact us</button>
           </div>
         </header>
       </div>
