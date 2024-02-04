@@ -7,6 +7,7 @@ import maintaion from './images/icons8-development-50.png'
 import design from './images/icons8-design-50.png'
 import upgrade from './images/icons8-update-50.png'
 import saz_pg from './images/S.png'
+import instagram from './images/instagram_logo.png'
 import dropment from './images/Dropment (2).png'
 const Service = ({ title, price, initialFeatures }) => {
   const [showAllFeatures, setShowAllFeatures] = useState(false);
@@ -204,6 +205,39 @@ const App = () => {
     </section>
   </div>
 </div>
+<div className="dropment-main-blog-page-footer">
+         <footer>
+              <section className="dropment-main-blog-page-footer-links-section">
+                <h2 style={{color: 'black'}}>Links</h2>
+                <p onClick={scrollToSectionabtus}>About us</p>
+                <p>Our Services</p>
+                <p onClick={scrollToSection2}>Our Work</p>
+              </section>
+              <section className="dropment-main-blog-page-footer-follow-section">
+                <h2 style={{color: 'black'}}>Social media</h2>
+                <a href="https://www.instagram.com/saz_infotech/">
+                <img src={instagram}/>
+                </a>
+              </section>
+              <section className="dropment-main-blog-page-footer-contact-section">
+                <h2 style={{color: 'black'}}>contact</h2>
+                <p>Email: dropment.saz@gmail.com</p>
+                <p onClick={openWhatsAppChat}>Phone no: 7760372901</p>
+              </section>
+              <section className="dropment-main-blog-page-footer-follow-section">
+                <h2 style={{color: 'black'}}>Other businesses</h2>
+                <a href="https://dropment.online/" style={{textDecoration: 'none'}}>
+                <p>Dropment</p>
+                </a>
+                <a href="https://saz-pg.vercel.app/" style={{textDecoration: 'none'}}>
+                <p>Saz PG</p>
+                </a>
+              </section>
+         </footer>
+        </div>
+        <div className='copyrights' style={{textAlign: 'center'}}>
+        &copy; {new Date().getFullYear()} Saz. All rights reserved.
+        </div>
     </div>
    </Fragment>
    )
