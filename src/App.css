@@ -52,6 +52,7 @@ header {
 .hero-section-img {
   flex: 1;
   display: flex;
+  flex-direction: column; /* Ensure a column layout for text and buttons */
   justify-content: center;
   align-items: center;
 }
@@ -62,14 +63,29 @@ header {
 }
 
 .hero-section-text h1 {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: bold;
   color: black; /* Set the text color */
 }
 
+.hero-section-text .button-container-hero-section {
+  margin-top: 20px;
+}
+
+.hero-section-text button {
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: transparent;
+  color: black;
+  padding: 15px 30px;
+  border: 2px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
 .hero-section-img {
   height: 100%; /* Make the image section take full height */
-  background-image: url('./images/Untitled\ design.png'); /* Add your image path */
+  background-image: url('./images/Untitled design.png'); /* Add your image path */
   background-size: cover;
   background-position: center;
 }
@@ -92,7 +108,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 80vh;
-    background-image: url('./images/Untitled\ design.png'); /* Add your image path */
+    background-image: url('./images/Untitled design.png'); /* Add your image path */
     background-repeat: no-repeat;
   }
 

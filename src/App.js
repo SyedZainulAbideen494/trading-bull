@@ -22,13 +22,18 @@ const App = () => {
         </header>
       </div>
       <div className='hero-section'>
-        <section className='hero-section-text'>
-            <h1>Crafting Websites<br/>
-            & Digital Excellence
-            </h1>
-        </section>
-        <section className='hero-section-img'></section>
-      </div>
+      <section className='hero-section-text'>
+        <h1>
+          Crafting Websites<br/>
+          & Digital Excellence
+        </h1>
+        <div className="button-container-hero-section">
+          <button>Our Work</button>
+          <button>Our Services</button>
+        </div>
+      </section>
+      <section className='hero-section-img'></section>
+    </div>
     </div>
    </Fragment>
    )
