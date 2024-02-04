@@ -450,3 +450,46 @@ header {
     margin-bottom: 20px; /* Add margin between sections on small screens */
   }
 }
+
+.section-5 {
+  padding: 40px;
+  text-align: center;
+}
+
+.section-5 h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333; /* Adjust the color as needed */
+}
+
+.section-5-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-5-service {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+.section-5-service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #9E73DA; /* Adjust the color as needed */
+}
+
+.section-5-service p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.section-5-service h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555; /* Adjust the color as needed */
+}

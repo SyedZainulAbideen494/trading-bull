@@ -152,6 +152,87 @@ const App = () => {
     </section>
   </div>
 </div>
+<div className='section-5'>
+      <h2>Our Services</h2>
+      <div className='section-5-services'>
+        <div className='section-5-service'>
+          <h3>Business Website</h3>
+          <p>Starting only at<br/>Rs 3499</p>
+          <h4>Features</h4>
+          <p>5 pages</p>
+          <p>Domain included</p>
+          <p>Seo Friendly</p>
+          <p>3 months free maintenance</p>
+          <p>Call button</p>
+          <p>Email form</p>
+          <p>Free SSL</p>
+          <p>100% Responsive Website</p>
+          <p>WhatsApp Button Integration</p>
+          <p>Annual Hsoting rs 7299</p>
+        </div>
+    <div className='section-5-service'>
+      <h3>Service based business Website</h3>
+      <p>Starting at only<br/>Rs 8999</p>
+      <h4>Features</h4>
+          <p>8 pages</p>
+          <p>Domain included</p>
+          <p>Seo Friendly</p>
+          <p>3 months free maintenance</p>
+          <p>Call button</p>
+          <p>Payment Gateway</p>
+          <p>Admin Panel</p>
+          <p>Email form</p>
+          <p>Free SSL</p>
+          <p>Dynamic Website (Premium Design)</p>
+          <p>100% Responsive Website</p>
+          <p>WhatsApp Button Integration</p>
+          <p>Annual Hsoting rs 7299</p>
+    </div>
+    <div className='section-5-service'>
+      <h3>E-commerce Website</h3>
+      <p>Starting at only<br/>Rs 19999</p>
+      <h4>Features</h4>
+          <p>15 pages</p>
+          <p>Domain included</p>
+          <p>Seo Friendly</p>
+          <p>12 months free maintenance</p>
+          <p>Call button</p>
+          <p>Payment Gateway</p>
+          <p>Admin Panel</p>
+          <p>3 months free Hosting</p>
+          <p>4 Products Categories</p>
+          <p>8 product varient</p>
+          <p>Email form</p>
+          <p>Free SSL</p>
+          <p>Dynamic Website (Premium Design)</p>
+          <p>100% Responsive Website</p>
+          <p>WhatsApp Button Integration</p>
+          <p>Annual Hsoting rs 7299</p>
+    </div>
+    <div className='section-5-service'>
+      <h3>Custom</h3>
+      <p>Rs ??</p>
+      <h4>Features</h4>
+          <p>pages according to requirement</p>
+          <p>Domain included</p>
+          <p>Seo Friendly</p>
+          <p>12 months free maintenance</p>
+          <p>Call button</p>
+          <p>Payment Gateway</p>
+          <p>Admin Panel</p>
+          <p>1 Year Free Hosting</p>
+          <p>?? Products Categories</p>
+          <p>?? product varient</p>
+          <p>Email form</p>
+          <p>Free SSL</p>
+          <p>Dynamic Website (Premium Design)</p>
+          <p>Product Variation Features</p>
+          <p>100% Responsive Website</p>
+          <p>WhatsApp Button Integration</p>
+          <p>Annual Hsoting rs 7299</p>
+    </div>
+  </div>
+  </div>
     </div>
    </Fragment>
    )
