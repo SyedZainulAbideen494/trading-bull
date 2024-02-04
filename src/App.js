@@ -16,6 +16,11 @@ const App = () => {
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${encodeURIComponent(phoneNumber)}`;
     window.open(whatsappUrl, '_blank');
   };
+  const section2Ref = useRef(null);
+
+  const scrollToSection2 = () => {
+    section2Ref.current.scrollIntoView({ behavior: 'smooth' });
+  };
    return(
    <Fragment>
      <div className='main-div'>
@@ -26,7 +31,7 @@ const App = () => {
           </div>
           <div className='header-btns'>
             <button>About us</button>
-            <button>Our work</button>
+            <button onClick={scrollToSection2}>Our work</button>
             <button>Services</button>
             <button onClick={openWhatsAppChat} className="contact-button" style={{border: '1px solid #9E73DA', borderRadius: '25px', padding: '10px 20px'}}>Contact us</button>
           </div>
@@ -39,7 +44,7 @@ const App = () => {
           & Digital Excellence
         </h1>
         <div className="button-container-hero-section">
-          <button>Our Work</button>
+          <button onClick={scrollToSection2}>Our Work</button>
           <button>Our Services</button>
         </div>
       </section>
@@ -108,7 +113,7 @@ const App = () => {
           <button onClick={openWhatsAppChat}>Contact Us</button>
   </section>
 </div>
-    <div className='section-2'>
+    <div className='section-2' ref={section2Ref}>
   <div className='heading-section-2'>
     <h2>Our Projects</h2>
   </div>
@@ -142,7 +147,6 @@ const App = () => {
     </section>
   </div>
 </div>
-
     </div>
    </Fragment>
    )
