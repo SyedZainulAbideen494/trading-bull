@@ -49,6 +49,11 @@ const App = () => {
   const scrollToSectionabtus = () => {
     sectionabtusRef.current.scrollIntoView({ behavior: 'smooth' });
   };
+  const sectionservicesRef = useRef(null);
+
+  const scrollToSectionservices = () => {
+    sectionservicesRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   const services = [
     {
       title: 'Business Website',
@@ -82,7 +87,7 @@ const App = () => {
           <div className='header-btns'>
             <button onClick={scrollToSectionabtus}>About us</button>
             <button onClick={scrollToSection2}>Our work</button>
-            <button>Services</button>
+            <button onClick={scrollToSectionservices}>Services</button>
             <button onClick={openWhatsAppChat} className="contact-button" style={{border: '1px solid #9E73DA', borderRadius: '25px', padding: '10px 20px'}}>Contact us</button>
           </div>
         </header>
@@ -95,7 +100,7 @@ const App = () => {
         </h1>
         <div className="button-container-hero-section">
           <button onClick={scrollToSection2}>Our Work</button>
-          <button>Our Services</button>
+          <button onClick={scrollToSectionservices}>Our Services</button>
         </div>
       </section>
       <section className='hero-section-img'></section>
@@ -163,7 +168,7 @@ const App = () => {
           <button onClick={openWhatsAppChat}>Contact Us</button>
   </section>
 </div>
-<div className='section-5'>
+<div className='section-5' ref={sectionservicesRef}>
       <h2>Our Services</h2>
       <div className='section-5-services'>
         {services.map((service, index) => (
@@ -210,7 +215,7 @@ const App = () => {
               <section className="dropment-main-blog-page-footer-links-section">
                 <h2 style={{color: 'black'}}>Links</h2>
                 <p onClick={scrollToSectionabtus}>About us</p>
-                <p>Our Services</p>
+                <p onClick={scrollToSectionservices}>Our Services</p>
                 <p onClick={scrollToSection2}>Our Work</p>
               </section>
               <section className="dropment-main-blog-page-footer-follow-section">
