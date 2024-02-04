@@ -366,3 +366,68 @@ header {
     margin-top: 40px;
   }
 }
+
+/* Your CSS file (e.g., Section4.css) */
+.section-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.section-4-text {
+  width: 48%;
+  text-align: center;
+}
+
+.section-4-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section-4-text p {
+  font-size: 16px;
+  color: #555;
+}
+
+.section-4-text button {
+  padding: 13px 50px;
+  color: white;
+  background-color: #A172DA;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 2px solid #A172DA;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-4-text button::before {
+  content: '\2192'; /* Unicode arrow right character */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 30px;
+  height: 100%;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-4-text button:hover::before {
+  transform: translateX(0);
+}
+
+.section-4-img {
+  width: 48%;
+  height: 300px; /* Set height as needed */
+  background-color: #e0e0e0; /* Example background color */
+  background-image: url('./images/Şirket\ Kültürü\ Nedir_\ Şirket\ Kültürü\ Nasıl\ Oluşturulur_.jpg'); /* Replace with the actual path or URL of your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}

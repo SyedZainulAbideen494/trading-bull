@@ -90,6 +90,24 @@ const App = () => {
         <button onClick={openWhatsAppChat}>Contact Us</button>
     </div>
 </div>
+<div className='section-4'>
+  <section className='section-4-text'>
+    <h2>Why choose us</h2>
+    <p>Elevate your digital presence with our expert 
+      website development solutions. At Saz infotech,
+       we craft transformative online experiences through
+        tailored, high-performing websites that not only 
+        embody your brand but also drive tangible growth. 
+        Our emphasis on innovative design, seamless user 
+        experience, and scalable functionality ensures your 
+        website stands out in the competitive digital 
+        landscape. Ready to build something extraordinary?
+         Choose us as your partner in propelling your business
+          to new heights.</p>
+          <button>Contact Us</button>
+  </section>
+  <section className='section-4-img'></section>
+</div>
     <div className='section-2'>
   <div className='heading-section-2'>
     <h2>Our Projects</h2>
@@ -124,6 +142,7 @@ const App = () => {
     </section>
   </div>
 </div>
+
     </div>
    </Fragment>
    )
