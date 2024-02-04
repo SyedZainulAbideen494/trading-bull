@@ -125,6 +125,7 @@ header {
 /* Your CSS file (e.g., Section1.css) */
 .section-1 {
   display: flex;
+  margin-top: 50px;
   justify-content: space-between;
   align-items: flex-start;
   background-color: #312A5D;
