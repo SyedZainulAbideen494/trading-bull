@@ -62,8 +62,8 @@ const App = () => {
     },
     {
       title: 'Service-based Business Website',
-      price: '8999, hosting not included',
-      features: ['8 pages', 'Domain included', 'SEO Friendly', '3 months free maintenance', 'Call button', 'Payment Gateway', 'Admin Panel', 'Email form', 'Free SSL', 'Dynamic Website (Premium Design)', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
+      price: '8999',
+      features: ['8 pages', 'Domain included', 'SEO Friendly', '3 months free maintenance', 'Call button', 'Admin Panel', 'Email form', 'Free SSL', 'Dynamic Website (Premium Design)', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
     },
     {
       title: 'E-commerce Website',
