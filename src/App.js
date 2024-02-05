@@ -1,4 +1,4 @@
-import React, { useRef, Fragment, useState, useCallback } from 'react';
+import React, { useRef, Fragment, useState, useCallback, useEffect } from 'react';
 import './App.css'
 import logo from './images/saz-infotech-w-removebg-preview.png'
 import banner from './images/Untitled design.png'
@@ -9,6 +9,36 @@ import upgrade from './images/icons8-update-50.png'
 import saz_pg from './images/S.png'
 import instagram from './images/instagram_logo.png'
 import dropment from './images/Dropment (2).png'
+
+const AnimatedSection = ({ children }) => {
+  const sectionRef = useRef();
+
+  useEffect(() => {
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          sectionRef.current.classList.add('visible');
+        } else {
+          sectionRef.current.classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sectionObserver.observe(sectionRef.current);
+
+    return () => {
+      sectionObserver.disconnect();
+    };
+  }, []);
+
+  return (
+    <div ref={sectionRef} className="section-fade-in">
+      {children}
+    </div>
+  );
+};
+
+
 const Service = ({ title, price, initialFeatures }) => {
   const [showAllFeatures, setShowAllFeatures] = useState(false);
   const featuresToDisplay = showAllFeatures ? initialFeatures : initialFeatures.slice(0, 3);
@@ -89,14 +119,10 @@ const App = () => {
       features: ['Pages according to requirement', 'Domain included', 'SEO Friendly', '12 months free maintenance', 'Call button', 'Payment Gateway', 'Admin Panel', '1 Year Free Hosting (Unlimited Space)', '?? Products Categories', '?? Products Listing from our side', 'Email form', 'Free SSL', 'Dynamic Website (Premium Design)', 'Product Variation Features', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
     },
   ];
-
-  const handleCallButtonClick = () => {
-    window.location.href = `tel:${phoneNumber}`;
-  };
-
    return(
    <Fragment>
      <div className='main-div'>
+      <AnimatedSection>
       <div className='header'>
         <header>
           <div className='logo-header'>
@@ -110,6 +136,8 @@ const App = () => {
           </div>
         </header>
       </div>
+      </AnimatedSection>
+      <AnimatedSection>
       <div className='hero-section'>
       <section className='hero-section-text'>
         <h1>
@@ -123,6 +151,8 @@ const App = () => {
       </section>
       <section className='hero-section-img'></section>
     </div>
+    </AnimatedSection>
+    <AnimatedSection>
     <div className='section-1'>
         <section className='section-1-textarea'>
             <h2>Our Work<br/> Offers</h2>
@@ -151,6 +181,8 @@ const App = () => {
             </div>
         </section>
     </div>
+    </AnimatedSection>
+    <AnimatedSection>
     <div className='section-3' ref={sectionabtusRef}>
     <div className='text-section-3'>
         <h2>Build Website And Grow Online Presence For Your Business</h2>
@@ -168,6 +200,8 @@ const App = () => {
     </div>
     <div className='img-section-3'></div>
 </div>
+</AnimatedSection>
+<AnimatedSection>
 <div className='section-4'>
 <section className='section-4-img'></section>
   <section className='section-4-text'>
@@ -186,6 +220,8 @@ const App = () => {
           <button onClick={openWhatsAppChat}>Contact Us</button>
   </section>
 </div>
+</AnimatedSection>
+<AnimatedSection>
 <div className='section-5' ref={sectionservicesRef}>
       <h2>Our Services</h2>
       <div className='section-5-services'>
@@ -194,6 +230,8 @@ const App = () => {
         ))}
       </div>
     </div>
+    </AnimatedSection>
+    <AnimatedSection>
     <div className='section-2' ref={section2Ref}>
   <div className='heading-section-2'>
     <h2>Our Projects</h2>
@@ -228,6 +266,7 @@ const App = () => {
     </section>
   </div>
 </div>
+</AnimatedSection>
 <div className="dropment-main-blog-page-footer">
          <footer>
               <section className="dropment-main-blog-page-footer-links-section">

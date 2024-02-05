@@ -589,3 +589,14 @@ footer {
     margin: 10px 0; /* Add some spacing between sections on smaller screens */
   }
 }
+
+.section-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.section-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
