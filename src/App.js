@@ -135,7 +135,7 @@ const App = () => {
     </div>
     <div className='section-3' ref={sectionabtusRef}>
     <div className='text-section-3'>
-        <h2>Build Website And Grow Online Presence For Yur Business</h2>
+        <h2>Build Website And Grow Online Presence For Your Business</h2>
         <p>
             Transform your business with our expert website
              development solutions. We create tailored,
