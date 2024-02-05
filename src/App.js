@@ -221,7 +221,6 @@ const App = () => {
   </section>
 </div>
 </AnimatedSection>
-<AnimatedSection>
 <div className='section-5' ref={sectionservicesRef}>
       <h2>Our Services</h2>
       <div className='section-5-services'>
@@ -230,7 +229,6 @@ const App = () => {
         ))}
       </div>
     </div>
-    </AnimatedSection>
     <AnimatedSection>
     <div className='section-2' ref={section2Ref}>
   <div className='heading-section-2'>
