@@ -12,7 +12,12 @@ import dropment from './images/Dropment (2).png'
 const Service = ({ title, price, initialFeatures }) => {
   const [showAllFeatures, setShowAllFeatures] = useState(false);
   const featuresToDisplay = showAllFeatures ? initialFeatures : initialFeatures.slice(0, 3);
+  const phoneNumber = '917760372901'; // Your WhatsApp number with country code
 
+  const openWhatsAppChat = () => {
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${encodeURIComponent(phoneNumber)}`;
+    window.open(whatsappUrl, '_blank');
+  };
   return (
     <div className='section-5-service'>
       <h3>{title}</h3>
@@ -24,9 +29,12 @@ const Service = ({ title, price, initialFeatures }) => {
         ))}
       </ul>
       {initialFeatures.length > 3 && (
+        <div>
         <button onClick={() => setShowAllFeatures(!showAllFeatures)}>
           {showAllFeatures ? 'Less' : 'More'} <span>&#9660;</span>
-        </button>
+        </button><br/>
+        <button onClick={openWhatsAppChat}>Contact Us</button>
+        </div>
       )}
     </div>
   );
