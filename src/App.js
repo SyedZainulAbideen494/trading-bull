@@ -56,6 +56,11 @@ const App = () => {
   };
   const services = [
     {
+      title: 'basic Website',
+      price: '499, hosting not included',
+      features: ['1 page', 'Domain not included', 'SEO Friendly', 'Call button', 'Free SSL', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
+    },
+    {
       title: 'Business Website',
       price: '3499, hosting not included',
       features: ['5 pages', 'Domain included', 'SEO Friendly', '3 months free maintenance', 'Call button', 'Email form', 'Free SSL', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
