@@ -89,6 +89,11 @@ const App = () => {
       features: ['Pages according to requirement', 'Domain included', 'SEO Friendly', '12 months free maintenance', 'Call button', 'Payment Gateway', 'Admin Panel', '1 Year Free Hosting (Unlimited Space)', '?? Products Categories', '?? Products Listing from our side', 'Email form', 'Free SSL', 'Dynamic Website (Premium Design)', 'Product Variation Features', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
     },
   ];
+
+  const handleCallButtonClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
    return(
    <Fragment>
      <div className='main-div'>
@@ -101,6 +106,10 @@ const App = () => {
             <button onClick={scrollToSectionabtus}>About us</button>
             <button onClick={scrollToSection2}>Our work</button>
             <button onClick={scrollToSectionservices}>Services</button>
+                  <button onClick={handleCallButtonClick}>
+        Call +91 7760372901
+      </button>
+
             <button onClick={openWhatsAppChat} className="contact-button" style={{border: '1px solid #9E73DA', borderRadius: '25px', padding: '10px 20px'}}>Contact us</button>
           </div>
         </header>
