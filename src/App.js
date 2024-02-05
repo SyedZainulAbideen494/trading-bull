@@ -57,12 +57,12 @@ const App = () => {
   const services = [
     {
       title: 'Business Website',
-      price: '3499',
+      price: '3499, hosting not included',
       features: ['5 pages', 'Domain included', 'SEO Friendly', '3 months free maintenance', 'Call button', 'Email form', 'Free SSL', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
     },
     {
       title: 'Service-based Business Website',
-      price: '8999',
+      price: '8999, hosting not included',
       features: ['8 pages', 'Domain included', 'SEO Friendly', '3 months free maintenance', 'Call button', 'Payment Gateway', 'Admin Panel', 'Email form', 'Free SSL', 'Dynamic Website (Premium Design)', '100% Responsive Website', 'WhatsApp Button Integration', 'Annual Hosting Rs 7299'],
     },
     {
