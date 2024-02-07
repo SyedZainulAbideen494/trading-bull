@@ -34,6 +34,23 @@ header {
   color: black;
   font-size: 16px;
   cursor: pointer;
+  position: relative;
+}
+
+.header-btns button:not(.contact-button)::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #9E73DA; /* Color 1 */
+  transition: width 0.3s ease-in-out;
+}
+
+.header-btns button:not(.contact-button):hover::before {
+  width: 100%;
+  background-color: #FF5733; /* Color 2 */
 }
 
 @media screen and (max-width: 600px) {
