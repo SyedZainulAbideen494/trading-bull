@@ -617,3 +617,25 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+.section-5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the sections horizontally */
+  gap: 20px; /* Add space between sections */
+}
+
+.section-5-prt {
+  width: 300px; /* Fixed width for each section */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  padding: 20px; /* Add padding for better appearance */
+  background-color: transparent; /* Add a background color */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+@media screen and (max-width: 768px) {
+  .section-5 {
+    justify-content: flex-start; /* Align sections to the start on smaller screens */
+  }
+}
+

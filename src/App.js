@@ -92,6 +92,9 @@ const App = () => {
   const scrollToSectionservices = () => {
     sectionservicesRef.current.scrollIntoView({ behavior: 'smooth' });
   };
+
+  
+  
   const services = [
     {
       title: 'basic Website',
@@ -152,6 +155,31 @@ const App = () => {
       <section className='hero-section-img'></section>
     </div>
     </AnimatedSection>
+    <div className='section-5'>
+      <section className='section-5-prt'>
+        <h2>50+ Satisfied Clients</h2>
+        <p>We've Partnered With Over 50 Satisfied
+           Clients Who’ve Entrusted Us With Their
+            Unique Requirements. Join Our Growing
+             List Of Satisfied Customers.</p>
+      </section>
+      <section className='section-5-prt'>
+        <h2>3 Years Experience</h2>
+        <p>Three Years of Excellence: Celebrating 
+          a Journey of Growth and Innovation. At
+           Saz Infotech, we've proudly cultivated 
+           three years of expertise in web development.
+            With each project, we've honed our skills,
+             exceeded expectations, and forged lasting
+              partnerships. Here's to many more milestones 
+              together!</p>
+      </section>
+     
+<section className='section-5-prt'>
+        <h2>100+ Successful Projects Completed</h2>
+        <p>With dedication and expertise, Saz Infotech has completed over 100 projects for satisfied clients across various industries. Our commitment to quality, creativity, and client satisfaction remains unwavering as we continue to exceed expectations. Join us on our journey of success.</p>
+      </section>
+    </div>
     <AnimatedSection>
     <div className='section-1'>
         <section className='section-1-textarea'>
