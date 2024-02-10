@@ -135,7 +135,7 @@ const App = () => {
             <button onClick={scrollToSectionabtus}>About us</button>
             <button onClick={scrollToSection2}>Our work</button>
             <button onClick={scrollToSectionservices}>Services</button>
-            <button onClick={openWhatsAppChat} className="contact-button" style={{border: '1px solid #9E73DA', borderRadius: '25px', padding: '10px 20px'}}>Contact us</button>
+            <button onClick={openWhatsAppChat} className="contact-button">Contact us</button>
           </div>
         </header>
       </div>

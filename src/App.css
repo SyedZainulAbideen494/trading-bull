@@ -30,7 +30,7 @@ header {
 .header-btns button {
   margin-left: 30px;
   background-color: transparent;
-  border: none;
+  border: 1px solid #F8F8F6;
   color: black;
   font-size: 16px;
   cursor: pointer;
@@ -637,5 +637,16 @@ footer {
   .section-5 {
     justify-content: flex-start; /* Align sections to the start on smaller screens */
   }
+}
+
+.contact-button {
+  padding: 12px 20px;
+}
+
+.contact-button:hover {
+  border: 1px solid #25D366;
+  border-radius: 25px;
+  transition: 0.3s;
+  color: #25D366;
 }
 
