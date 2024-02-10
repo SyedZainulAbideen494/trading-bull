@@ -315,10 +315,10 @@ const App = () => {
               <section className="dropment-main-blog-page-footer-follow-section">
                 <h2 style={{color: 'black'}}>Other businesses</h2>
                 <a href="https://dropment.online/" style={{textDecoration: 'none'}}>
-                <p>Dropment</p>
+                <p style={{color: 'black'}}>Dropment</p>
                 </a>
                 <a href="https://saz-pg.vercel.app/" style={{textDecoration: 'none'}}>
-                <p>Saz PG</p>
+                <p style={{color: 'black'}}>Saz PG</p>
                 </a>
               </section>
          </footer>
